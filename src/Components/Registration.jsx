@@ -10,13 +10,6 @@ const Registration = () => {
   };
 
   const handleButtonClick = () => {};
-  const handleRegistration = ({ name, email, password, isValid, errors }) => {
-    if (isValid) {
-      console.log("Registration data:", { name, email, password });
-    } else {
-      console.log("Validation errors:", errors);
-    }
-  };
 
   return (
     <div className="form">
@@ -30,7 +23,6 @@ const Registration = () => {
       <ButtonFB onClick={handleButtonClick} />
       <p className="Or">Or</p>
       <Form onSubmit={handleFormSubmit} />
-      <RegistrationValidation>{handleRegistration}</RegistrationValidation>
     </div>
   );
 };
